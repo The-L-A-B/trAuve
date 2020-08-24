@@ -4,10 +4,12 @@ DROP DATABASE IF EXISTS 'trauve';
 CREATE DATABASE 'trauve';
 
 
-CREATE TABLE 'trauve' (
+CREATE TABLE 'Product' (
     'id' Int(11) AUTO_INCREMENT NOT NULL,
     'type' VARCHAR( 255 ) NOT NULL,
     'price' Int (11), 
     'name' VARCHAR( 255 ) NOT NULL,
+    'description' VARCHAR(255) NOT NULL,
     'size' VARCHAR( 255 ) NOT NULL,
+    'quantity' Int(11)
 )

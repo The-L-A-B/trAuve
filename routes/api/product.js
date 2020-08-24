@@ -4,31 +4,33 @@
 
 // Dependencies
 // =============================================================
+const router = require("express").Router();
+var db = require("../../models");
 
-var db = require("../models/");
 
-module.exports = function(app) {
     // Get all items 
-    app.get("/api/all", function(req, res) {
-        db.Trauve.findAll({})
+    router.get("/products", function(req, res) {
+        db.Product.findAll({})
         .then(function(results) {
             res.json(results);
         });
     });  
 
-    // Add a item
-    app.post("/api/new", function(req, res) {
+    // Add a product
+    router.post("/products", function(req, res) {
       console.log(req.body);
     
-      Trauve.create ({
+      Product.create ({
           type: req.body.type,
           price: req.body.price,
           name: req.body.name,
-          size: req.body.size
-      }).then(function(results) {
+          description: req.body.description,
+          size: req.body.size,
+          quantity: req.body.quantity,
+      }).then(function(res) {
           res.end()
       })
       
     });
-};
   
+module.exports = router;
