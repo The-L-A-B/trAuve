@@ -1,0 +1,32 @@
+{
+  "name": "trauve",
+  "version": "1.0.0",
+  "description": "ecommerce site that sells swag",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js && npx sequelize-cli db:seed:undo && npx sequelize-cli db:seed:all && cd frontend && npm i && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-L-A-B/trAuve.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/The-L-A-B/trAuve/issues"
+  },
+  "homepage": "https://github.com/The-L-A-B/trAuve#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "compression": "^1.7.4",
+    "dotenv": "^8.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.7",
+    "sequelize-cli": "^5.5.1"
+  }
+}
