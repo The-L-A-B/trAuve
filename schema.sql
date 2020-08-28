@@ -11,7 +11,7 @@ CREATE TABLE Product (
     price int NOT NULL, 
     name varchar( 255 ) NOT NULL,
     description varchar(255) NOT NULL,
-    size varchar( 255 ) NOT NULL,
+    size varchar( 255 ),
     quantity int NOT NULL,
     PRIMARY KEY (id)
 )
