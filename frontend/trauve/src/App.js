@@ -1,8 +1,15 @@
+//React Components and Hooks
 import React from 'react';
-import './App.css';
+//Styles
+//Custom Components
+import Routes from "./Routes";
 
 function App() {
-  return <div className='App'>HELLO FROM TRAUVE</div>;
+  return (
+    <div>
+      <Routes/>
+    </div>
+  )
 }
 
 export default App;
