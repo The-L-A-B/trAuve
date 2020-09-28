@@ -1,15 +1,17 @@
 //React Components and Hooks
 import React from 'react';
 //Styles
+import CssBaseline from '@material-ui/core/CssBaseline';
 //Custom Components
-import Routes from "./Routes";
+import Routes from './Routes';
 
 function App() {
   return (
     <div>
-      <Routes/>
+      <CssBaseline />
+      <Routes />
     </div>
-  )
+  );
 }
 
 export default App;
