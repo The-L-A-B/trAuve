@@ -4,6 +4,8 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 //Custom Components
 import Routes from './Routes';
+import Header from './components/Header';
+import NavTabs from './components/NavTabs';
 
 function App() {
   return (
