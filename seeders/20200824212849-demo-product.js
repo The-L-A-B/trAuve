@@ -33,7 +33,7 @@ module.exports = {
           type: 'pens',
           price: false,
           name: 'G-Tech 0.3',
-          description: 'Fine pen',
+          description: 'Fine pen.',
           size: null,
           quantity: 30,
         },
